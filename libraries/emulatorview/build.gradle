@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 4
@@ -14,5 +14,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+
+    sourceSets.main {
+      java.srcDirs = ['src']
+      res.srcDirs = ['res']
+      manifest.srcFile 'AndroidManifest.xml'
     }
 }

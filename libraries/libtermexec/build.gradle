@@ -14,7 +14,7 @@ repositories {
 
 android {
     compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 4
@@ -40,6 +40,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets.main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src']
+      aidl.srcDirs = ['src']
+      jni.srcDirs = ['jni']
+    }
+
 }
 
 // by default recent plugin version does not copy any AIDL files "to avoid publishing too much"
