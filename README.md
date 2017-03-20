@@ -12,9 +12,10 @@ better way to achieve the same goal.
 I attached the original README file of jackpalterm.AOSP at the end of
 this document. TODO: should be merged.
 
-Notice: Compiling as part of Cyanogenmod 13 works great, whereas
-the usual Gradle build system is presently BROKEN.
-I am going to fix this later.
+Compiling has been tested along with the source code tree of
+Cyanogenmod 13 as well as LineageOS 14.1.
+The usual Gradle build system (which was originally broken by my changes)
+now works again.
 
 # Original README by Jack Palevich
 
